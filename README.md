@@ -3,7 +3,7 @@
 ## 实验环境
 | 程序 | 版本 |
 | --- | --- |
-| 操作系统 | Ubuntu 126.04 |
+| 操作系统 | Ubuntu 16.04 |
 | 内存容量 | 128 G |
 | 硬盘容量 | 8 T |
 | 显卡型号 | GTX 1080Ti * 4 |
@@ -52,4 +52,4 @@
 ![alt text](docs/normal-cnn.jpg "title")
 
 ### 输出层 Output
-![alt text](docs/normal-out.jpg "title")
+![alt text](docs/normal-output.jpg "title")
