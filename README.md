@@ -1,17 +1,6 @@
 # detect-lstm-model
 
-## Environment
-| Key | Value |
-| --- | --- |
-| OS | Ubuntu 16.04 |
-| Memory | 128 G |
-| Disk | 8 T |
-| GPU | GTX 1080Ti * 4 |
-| Framework | Keras / Tensorflow |
-
-## Detect abnormality URL
-One gpu runnig one model.(Total 3 Epochs)
-
+## URL
 |  Model  |  Accuracy  |  Precision  |  Recall  |  F1 Score  | Time per Epoch  |
 |  -----  |  :-----:  |  :----:  |  :----:  |  :----:  |  :----:  |
 | Bi-LSTM              |  99.51%  |  99.54%  |  99.81%  |  99.67%  |  1242ms  |
@@ -19,9 +8,7 @@ One gpu runnig one model.(Total 3 Epochs)
 | CNN + Bi-LSTM        |  99.60%  |  99.75%  |  99.72%  |  99.73%  |  326ms  |
 | CNN + Bi-LSTM + CNN  |  99.54%  |  99.75%  |  99.64%  |  99.69%  |  318ms  |
 
-## Detect abnormality Request
-One gpu runnig one model.(Total 5 Epochs)
-
+## Request
 |  Model  |  Accuracy  |  Precision  |  Recall  |  F1 Score  | Time per Epoch  |
 |  -----  |  :-----:  |  :----:  |  :----:  |  :----:  |  :----:  |
 | Bi-LSTM              |  82.30%  |  80.81%  |  99.93%  |  89.23%  |  4434ms  |
@@ -46,9 +33,11 @@ One gpu runnig one model.(Total 5 Epochs)
 ## General Architecture
 
 ### Input Layer
-Use character embedding, no word embedding.
+character embedding √
 
-## CNN Layer
+word embedding ×
+
+### CNN Layer
 ![alt text](docs/normal-cnn.jpg "title")
 
 ### Output Layer
